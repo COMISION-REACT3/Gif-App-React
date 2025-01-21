@@ -1,0 +1,9 @@
+.gif{
+    border-radius: 10px;
+    width: 300px;
+    max-width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }

@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
+
+.form-buscador{
+    padding: 20px;
+    text-align: center;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.form-buscador label{
+    font-size: 40px;
+    font-family: 'Jersey 15', sans-serif;
+    color: white;
+}
+
+.buscador{
+    padding: 10px 30px;
+    border-radius:20px; 
+    box-shadow: 0px 0px 10px #fff;
+    border:none;   
+    font-family:'Jersey 15', sans-serif, 'Arial Narrow', Arial, sans-serif;
+    width: 20%;
+    font-size: 30px;
+    text-align: center;
+    caret-color: blue;
+}
+
+.buscador:focus-visible{
+    outline: none;
+}
+
+/* MediaQuery para dispositivos de 720px */
+
+@media (max-width: 768px) {  
+    .buscador{
+        width: 40%;
+    }
+}
+
+/* MediaQuery para dispositivos de 480px */
+
+@media (max-width: 480px) {  
+    .buscador{
+        width: 70%;
+    }
+}
