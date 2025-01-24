@@ -1,9 +1,21 @@
+import {OneGif} from '../../components';
 import './GridGifs.css';
 
-function GridGifs() {
+function GridGifs ({gifs}) {
   return (
-    <div>GridGifs</div>
+   <div className='contenedor-grid-gifs'>
+     {
+            gifs.map((gif, index) => (
+             <OneGif
+             gif={gif}
+             key={index}
+             index={index}
+             />
+            ))
+      } 
+   </div>
   )
 }
+
 
 export default GridGifs
